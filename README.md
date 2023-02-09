@@ -1,4 +1,4 @@
-# Extend AI Machine Learning Engineer Assessment
+# DEEp LSTSM Network for question duplicate
 
 Build a Siamese network that identifies question duplicates in a dataset from Quora.
 
@@ -17,12 +17,11 @@ Details:
 ## Triplet loss
 
 Triplet loss is composed of two terms. One term utilizes the mean of all the non duplicates, the second utilizes the *closest negative*. Our loss expression is then:
- 
-\begin{align}
- \mathcal{Loss_{1}(A,P,N)} &=\max \left( -cos(A,P)  + mean_{neg} +\alpha, 0\right) \\
- \mathcal{Loss_{2}(A,P,N)} &=\max \left( -cos(A,P)  + closest_{neg} +\alpha, 0\right) \\
-\mathcal{Loss(A,P,N)} &= mean(Loss_1 + Loss_2) \\
-\end{align}
+
+ $ Loss_{1}(A,P,N) &=\max \left( -cos(A,P)  + mean_{neg} +\alpha, 0\right)$ \\
+ $ Loss_{2}(A,P,N) &=\max \left( -cos(A,P)  + closest_{neg} +\alpha, 0\right)$ \\
+ $ Loss(A,P,N) &= mean(Loss_1 + Loss_2) $\
+
 
 ## Evaluation
 
